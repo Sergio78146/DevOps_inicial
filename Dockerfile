@@ -1,6 +1,6 @@
 FROM python:3.11-slim
-WORKDIR /app
+WORKDIR /my-secure-app/app
 COPY requirements.txt .
 RUN pip install -r requirements.txt
-COPY app/ .
+COPY my-secure-app/app/ .
 CMD ["python", "main.py"]
